@@ -1,0 +1,221 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RESP||NAV</title>
+    <link href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css " rel="stylesheet ">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Grenze&display=swap');
+        * {
+            margin: 0PX;
+            padding: 0PX;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Grenze', serif;
+            background-image: linear-gradient(to left bottom, #d1c716, #8eda66, #52e2ac, #4be2e0, #88ddf7, #82d0f9, #86c1f8, #94b0f1, #7292f2, #5872f0, #4a4ee8, #4b1bda);
+        }
+        
+        .container nav.desk {
+            width: 100%;
+            background: #6B5E62;
+            height: 60px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+            top: 0;
+            left: 0;
+        }
+        
+        nav.desk ul {
+            list-style: none;
+            width: 60%;
+            height: 60px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        nav.desk ul li {
+            width: 30%;
+            float: left;
+            font-size: 20px;
+            text-align: center;
+            line-height: 60px;
+            text-transform: uppercase;
+            transition: all 0.5s ease;
+        }
+        
+        nav ul li:hover {
+            background: #59BDE5;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+        }
+        
+        nav ul li.active {
+            background: #59BDE5;
+        }
+        
+        nav ul li.active:hover {
+            background: #59BDE5;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        @media screen and (max-width:600px) {
+            nav.desk {
+                width: 100%;
+            }
+        }
+        
+        .arrow {
+            height: 80PX;
+            width: 80px;
+            background: #D1C716;
+            border-radius: 50%;
+            float: left;
+            position: fixed;
+        }
+        
+        .arrow .fa-arrow-circle-up {
+            font-size: 80px;
+        }
+        
+        .arrow:hover {
+            background: #DB1890;
+            transition: all 0.5s ease;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+            cursor: pointer;
+        }
+        
+        .banner {
+            width: 100%;
+            height: 400px;
+        }
+        
+        .banner img {
+            width: 100%;
+            height: 400px;
+        }
+        
+        .main-content {
+            padding-top: 40px;
+            padding-bottom: 20px;
+            background: #6B5E62;
+            width: 100%;
+            height: auto;
+        }
+        
+        .Sub-content {
+            text-align: justify;
+            text-justify: inter-word;
+            text-align: left;
+            font-size: 25px;
+            margin: 0 auto;
+            color: white;
+            line-height: 1.5em;
+            font-family: sans-serif;
+            background: #6B5E62;
+            width: 80%;
+            height: auto;
+        }
+        
+        h1 {
+            margin: 0;
+            padding-top: 30px;
+            font-size: 40px;
+            color: #52e2ac;
+        }
+        
+        h2 {
+            font-size: 25px;
+            color: #82d0f9;
+        }
+        
+        .Sub-content ul {
+            margin-top: 20px;
+        }
+        
+        .Sub-content ul li {
+            text-decoration: none;
+            list-style-type: none;
+        }
+        
+        .Sub-content ul li a {
+            background: white;
+            font-size: 30px;
+            line-height: 2em;
+            text-decoration: none;
+        }
+        
+        footer {
+            width: 100%;
+            height: 50px;
+            background: #D1C716;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!----------------------Header-section----------------------------->
+    <div class="container ">
+        <nav id="main-bainer" class="desk">
+            <ul>
+                <li class="active "><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <!----------------------Bainner-section----------------------------->
+    <div class="banner">
+        <img src="desc-images/github-logo.jpg" alt="Banner-image">
+    </div>
+    <!----------------------------Arrow-section----------------------------->
+    <div class="arrow">
+        <center>
+            <a href="#main-bainer" target=""><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+        </center>
+    </div>
+    <!----------------------Main-content------------------------------------>
+    <div class="main-content">
+        <div class="Sub-content">
+            <p>
+                Git is a version control system which enables you to track changes to files. It is entirely file based itself, meaning there is no additioanl software or applications required except Git istelf. Using Git, you are able to revert files back to previous
+                versions, restore deleted files, remove added files and even track down where a particular line of code was introduced. Git creates a .git folder (in the current folder) to store the details of the file system - this folder contains all
+                the data required to track your files and is known as a repository, or repo. Git tracks file changes by the user creating a save point, or in Git terms a commit. Each commit takes a snapshot of the current file system rather than storing
+                just the changes made since the last commit. This allows a commit ot be extracted and the whole history not required to rebuild the file system. More information can be found on the Git website.
+            </p>
+            <h1>Some Important Topics</h1><br>
+            <h2>1. THE GITHUB WORKFLOW <br> 2. CENTRALIZED VS DISTRIBUTED VERSION CONTROL <br> 3. FORK AND CLONE<br> 4. A LITTLE THING ABOUT REMOTES <br> 5. CREATE A TOPIC BRANCH<br> 6. TAGGING<br> 7. COMMIT YOUR WORK AND CHECKOUT THE FILES<br>8. THE COMMIT
+                MESSAGE
+                <br>9. USING CHECKOUT<br>10. PUSH, OR SEND PULL REQUEST</h2>
+            <h1 style="text-align: center;">Useful Tutorial/Websites From where you can learn Github</h1>
+            <H3>
+                <ul style="text-align:center;">
+                    <li><a href="https://www.edyoda.com/course/1486?episode_id=2237">Edyoda</a></li>
+                    <li><a href="https://try.github.io/">Learn github</a></li>
+                    <li><a href="https://www.traversymedia.com/">TraversyMedia</a></li>
+
+                    <li><a href="https://freecodecamp.org">FreecodeCamp</a></li>
+                </ul>
+            </H3>
+        </div>
+    </div>
+    <!----------------------Footer-section----------------------------->
+    <footer>
+        <div class="footer-sec">
+            <p>All right reserve Made by Aman sharama | 2 Agu 2019</p>
+        </div>
+    </footer>
+</body>
+
+</html>

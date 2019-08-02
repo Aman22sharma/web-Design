@@ -1,0 +1,171 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RESP||NAV</title>
+    <link href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css " rel="stylesheet ">
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Grenze&display=swap');
+        * {
+            margin: 0PX;
+            padding: 0PX;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Grenze', serif;
+            background-image: linear-gradient(to left bottom, #d1c716, #8eda66, #52e2ac, #4be2e0, #88ddf7, #82d0f9, #86c1f8, #94b0f1, #7292f2, #5872f0, #4a4ee8, #4b1bda);
+        }
+        
+        .container nav.desk {
+            width: 100%;
+            background: #6B5E62;
+            height: 60px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+            top: 0;
+            left: 0;
+        }
+        
+        nav.desk ul {
+            list-style: none;
+            width: 60%;
+            height: 60px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        nav.desk ul li {
+            width: 30%;
+            float: left;
+            font-size: 20px;
+            text-align: center;
+            line-height: 60px;
+            text-transform: uppercase;
+            transition: all 0.5s ease;
+        }
+        
+        nav ul li:hover {
+            background: #59BDE5;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+        }
+        
+        nav ul li.active {
+            background: #59BDE5;
+        }
+        
+        nav ul li.active:hover {
+            background: #59BDE5;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        @media screen and (max-width:600px) {
+            nav.desk {
+                width: 100%;
+            }
+        }
+        
+        #register-form {
+            padding-top: 8%;
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #input-box:hover {
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+            border: 1px solid #ccc;
+            border-radius: 10px 10px 10px 10px;
+        }
+        
+        #input-box {
+            padding-top: 80px;
+            padding-bottom: 20px;
+            padding-left: 80px;
+            padding-right: 80px;
+            background-color: white;
+            border-radius: 10px 10px 10px 10px;
+        }
+        
+        #input-box input {
+            width: 100%;
+            font-size: 18px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            margin-bottom: 36px;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .submit-button {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            background-color: white;
+            text-align: center;
+        }
+        
+        .submit-button input {
+            font-size: 18px;
+            Padding-Left: 24px;
+            padding-Right: 24px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            background-color: #0056ff;
+            color: white;
+            border: none;
+        }
+        
+        footer {
+            margin-top: 20%;
+            height: 50px;
+            width: 100%;
+            background: #D1C716;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!----------------------Header-section----------------------------->
+    <div class="container ">
+        <nav class="desk ">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="active "><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!----------------------Form-section----------------------------->
+    <form id="register-form" method="GET">
+        <div id="input-box">
+            <input class="input-box" type="text" name="username" placeholder="Username" required maxlength="20" autofocus>
+            <input class="input-box" type="email" name="email" id="email" placeholder="Email" required>
+            <input class="input-box" type="text" name="contact-no." id="contact-no" placeholder="contact-no." required maxlength="12">
+            <div class="submit-button">
+                <input type="submit" value="Connect">
+            </div>
+        </div>
+    </form>
+    <!----------------------Footer-section----------------------------->
+    <footer>
+        <div class="footer-sec">
+            <p>All right reserve Created by Aman sharama 2019</p>
+        </div>
+    </footer>
+</body>
+
+</html>

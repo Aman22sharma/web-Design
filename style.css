@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Grenze&display=swap');
+* {
+    margin: 0PX;
+    padding: 0PX;
+    user-select: none;
+}
+
+body {
+    font-family: 'Grenze', serif;
+    background-image: linear-gradient(to left bottom, #d1c716, #8eda66, #52e2ac, #4be2e0, #88ddf7, #82d0f9, #86c1f8, #94b0f1, #7292f2, #5872f0, #4a4ee8, #4b1bda);
+}
+
+.container nav.desk {
+    width: 100%;
+    background: #6B5E62;
+    height: 60px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+    top: 0;
+    left: 0;
+}
+
+nav.desk ul {
+    list-style: none;
+    width: 60%;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav.desk ul li {
+    width: 30%;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+nav ul li:hover {
+    background: #59BDE5;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+}
+
+nav ul li.active {
+    background: #59BDE5;
+}
+
+nav ul li.active:hover {
+    background: #59BDE5;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width:600px) {
+    nav.desk {
+        width: 100%;
+    }
+}
+
+.arrow {
+    height: 80PX;
+    width: 80px;
+    background: #D1C716;
+    border-radius: 50%;
+    float: left;
+    position: fixed;
+}
+
+.arrow .fa-arrow-circle-up {
+    font-size: 80px;
+}
+
+.arrow:hover {
+    background: #DB1890;
+    transition: all 0.5s ease;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+    cursor: pointer;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.showcase {
+    margin-left: 8%;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+    /*ADD FLEXBOX*/
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.box {
+    width: 25%;
+    height: 400px;
+    background: transparent;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 50px;
+    border-radius: 10px 10px 10px 10px;
+    border-bottom: 4px solid white;
+    background-color: #6B5E62;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box:hover {
+    background: #D1C716;
+    transition: all 0.5s ease;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+    cursor: pointer;
+}
+
+.showcase .box {
+    color: white;
+}
+
+.title {
+    color: white;
+}
+
+.box img {
+    border-radius: 10px 10px 0 0;
+}
+
+@media screen and (max-width:1200px) {
+    .box {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .box {
+        width: 90%;
+    }
+}
+
+footer {
+   
+    width: 100%;
+    height: 50px;
+    background: #D1C716;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}

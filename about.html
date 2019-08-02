@@ -1,0 +1,255 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RESP||NAV</title>
+    <link href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css " rel="stylesheet ">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Grenze&display=swap');
+        * {
+            margin: 0PX;
+            padding: 0PX;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Grenze', serif;
+            background-image: linear-gradient(to left bottom, #d1c716, #8eda66, #52e2ac, #4be2e0, #88ddf7, #82d0f9, #86c1f8, #94b0f1, #7292f2, #5872f0, #4a4ee8, #4b1bda);
+        }
+        
+        .container nav.desk {
+            width: 100%;
+            background: #6B5E62;
+            height: 60px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+            top: 0;
+            left: 0;
+        }
+        
+        nav.desk ul {
+            list-style: none;
+            width: 60%;
+            height: 60px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        nav.desk ul li {
+            width: 30%;
+            float: left;
+            font-size: 20px;
+            text-align: center;
+            line-height: 60px;
+            text-transform: uppercase;
+            transition: all 0.5s ease;
+        }
+        
+        nav ul li:hover {
+            background: #59BDE5;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+        }
+        
+        nav ul li.active {
+            background: #59BDE5;
+        }
+        
+        nav ul li.active:hover {
+            background: #59BDE5;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        @media screen and (max-width:600px) {
+            nav.desk {
+                width: 100%;
+            }
+        }
+        
+        .showcase {
+            margin-top: 70px;
+            margin-bottom: 30px;
+            width: auto;
+            height: 350px;
+            background: #6B5E62;
+        }
+        
+        .showcase:hover {
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+            background: #D1C716;
+            transition: all 2.5s ease;
+        }
+        
+        .showcase .box {
+            margin-top: -30px;
+            margin-left: 80px;
+            float: left;
+            width: 20%;
+            height: 400px;
+            border-radius: 10px 10px 10px 10px;
+            border-bottom: 4px solid white;
+            border-top: hidden;
+            border-left: hidden;
+            border-right: hidden;
+        }
+        
+        .showcase .box img {
+            width: 100%;
+            height: 400px;
+            border-radius: 10px 10px 10px 10px;
+        }
+        
+        h1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+            text-align: center;
+            font-size: 60px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+        
+        H2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+            text-align: center;
+            font-size: 40px;
+            color: white;
+            font-weight: bold;
+        }
+        
+        p {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+        
+        span {
+            text-align: center;
+            color: tomato;
+            font-size: 30px;
+            line-height: 80px;
+        }
+        
+        .footer-social-icon {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+            width: 100%;
+            margin-top: 50px;
+            height: auto;
+            margin-left: 13%;
+        }
+        
+        .footer-social-icon ul {
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+        
+        .footer-social-icon ul li {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            margin: 0 20px;
+            border-radius: 100%;
+            background: #59BDE5;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .footer-social-icon ul li:hover {
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+            background: #D1C716;
+            transition: all 0.5s ease;
+        }
+        
+        .footer-social-icon ul li a {
+            color: white;
+            font-size: 40px;
+        }
+        
+        .footer-social-icon ul li a:hover {
+            color: #272727;
+            transition: all 0.5s ease;
+        }
+        
+        .footer-social-icon ul li a i {
+            line-height: 80px;
+        }
+        
+        footer {
+            margin-top: 10%;
+            width: 100%;
+            height: 50px;
+            background: #D1C716;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!----------------------Header-section----------------------------->
+    <div class="container ">
+        <nav class="desk">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li class="active "><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <!----------------------Main-section----------------------------->
+    <main>
+        <div class="showcase">
+            <div class="box">
+                <img src="profile-image.jpg" atl="profile-image">
+
+            </div>
+            <h1>Aman kumar sharma</h1>
+            <H2>Front end web developer</H2>
+            <p>NSHM Knowledge Campus , Durgapur (West Bangal)</p>
+            <p>I am a Final year student of Computer Science and Engineering Department<br> I am passinate about Full stack web development</p>
+            <center>
+                <span ">" The biggest risk is not taking any risk "</span">
+        </center>
+        </div>
+     <!----------------------Social-icons-section----------------------------->    
+        <div class="footer-main-div">
+            <div class="footer-social-icon">
+                <ul>
+                    <li><a href="https://www.facebook.com/amankumar.sharma.39501" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/Aman22sharma" target="blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.kumaraman.rose@gmail.com" target="blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/aman-kumar-sharma-2a4775159/" target="blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/aman_sharma.richel/?hl=en" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://codepen.io/aman22sharma/" target="blank"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+                 </ul>
+            </div>
+        </div>
+    </main>
+    <!----------------------Footer-section----------------------------->
+    <footer>
+        <div class="footer-sec">
+            <p>All right reserve Made by Aman sharama | 2 Agu 2019</p>
+        </div>
+    </footer>
+</body>
+</html>
